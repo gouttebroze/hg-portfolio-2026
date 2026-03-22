@@ -1,3 +1,6 @@
+import * as React from 'react';
+import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
+import { Container } from '@mui/material';
 import { useRef } from 'react'
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -5,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar';
+import { Footer } from './components/Footer';
 
 gsap.registerPlugin(useGSAP);
 //gsap.registerPlugin(ScrollTrigger, useGSAP)
@@ -25,17 +30,20 @@ function App() {
 
 
   return (
-    <>
-      <h1>Gsap on React</h1>
-      <div ref={container}>
-        <div className="boxes">
-         <div className='box a'>a</div>
-          <div className='box b'>b</div>
-          <div className='box c'>c</div> 
+    <ScopedCssBaseline>
+      <Container fixed>
+        <Navbar />
+        <h1>Bienvenue! Hugues, Concepteur développeur d'application en région lyonnaise.</h1>
+        <div ref={container}>
+          <div className="boxes">
+          <div className='box a'>a</div>
+            <div className='box b'>b</div>
+            <div className='box c'>c</div> 
+          </div>
         </div>
-        
-      </div>
-    </>
+        <Footer />
+      </Container>
+    </ScopedCssBaseline>
   )
 }
 
