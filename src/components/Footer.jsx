@@ -39,20 +39,8 @@ export function Footer() {
                   <li>
                       <Link to="/contact">Contact</Link>
                   </li>
-                  <li>
-                      <Link to="/blog">Blog</Link>
-                  </li>
-                <li>
-                      <Link to="/">La france pue</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Radio Dio 89.5</Link>
-                    </li>
                     <li>
                       <Link to="/">Linkedin</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Facebook</Link>
                     </li>
                   </ul>
           </nav>         

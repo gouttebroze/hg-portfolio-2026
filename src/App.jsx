@@ -8,8 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navbar from './components/Navbar';
+/* import Navbar from './components/Navbar'; */
 import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
 
 gsap.registerPlugin(useGSAP);
 //gsap.registerPlugin(ScrollTrigger, useGSAP)
@@ -32,7 +34,9 @@ function App() {
   return (
     <ScopedCssBaseline>
       <Container fixed>
+        {/* <Navbar /> */}
         <Navbar />
+        <Hero />
         <h1>Bienvenue! Hugues, Concepteur développeur d'application en région lyonnaise.</h1>
         <div ref={container}>
           <div className="boxes">
